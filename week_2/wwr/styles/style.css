@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 #content{
-    max-width: 1600px; /* You can adjust this to the desired max width */
-    margin: 0 auto;    /* Centers the container */  /* Optional: adds some padding on the sides */
+    max-width: 1600px; 
+    margin: 0 auto;   
 }
 
 .home-title {
     color: #1D3557;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 2em;
+    margin-top: 10;
 }
 #background {
     height: 725px;
@@ -12,7 +18,8 @@
     color: #F1FAEE;
 }
 #hero-img {
-    width: 1497px;
+    width: 100%;
+    height: auto;
 }
 #hero-msg h1 {
     text-align: center;
@@ -29,6 +36,13 @@ main section {
 body {
     background-color: #F1FAEE;
     color: #1D3557;
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #e1841f;
@@ -39,22 +53,20 @@ nav a:hover {
     color: #F1FAEE;
 }
 nav a {
-    background-color: #e1841f;
     color: #F1FAEE;
     text-decoration: none;
     text-align: center;
+    padding: 35px;
 }
-.book {
-    background-color: #F1FAEE;
-    color: #1D3557;
-    text-align: center;
-    text-decoration: none;
-}
-.join {
+.join, .book {
     background-color: #1D3557;
     color: #F1FAEE;
-    text-align: center;
     text-decoration: none;
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover {
     background-color: #1D3557;
@@ -67,15 +79,23 @@ nav a {
 .msg {
     background-color: #1D3557;
     color: #F1FAEE;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #F1FAEE;
 }
 .msg p {
     color: #F1FAEE;
+    font-family: 'Funnel Display', sans-serif;
+    font-size: 1em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #e1841f;
+    padding: 25px 50px;
+    padding-top: 15px;
+    margin-top: 200px;
 }
 footer a {
     color: #F1FAEE;
@@ -89,7 +109,27 @@ footer p {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo {
     width: 80px;
+}
+.social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid black;
+}
+main section img {
+    box-sizing: border-box;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.mountains {
+    padding-top: 100px;
+    padding-bottom: 200px;
 }

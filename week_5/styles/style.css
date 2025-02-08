@@ -1,0 +1,22 @@
+#content {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#click-me-btn {
+    background-color: #4CAF50;
+    color: rgb(2, 1, 1);
+    padding: 40px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.75);
+}
+#click-me-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: #4CAF50;
+}
