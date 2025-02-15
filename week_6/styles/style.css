@@ -1,0 +1,4 @@
+#content {
+    text-align: center;
+    grid-template-columns: 2fr 3fr 2fr;
+}
