@@ -199,6 +199,30 @@ nav {
     grid-template-columns: repeat(10, 1fr);
 }
 
+.cnd_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 300px 300px 300px;
+}
+
+#rafting{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#why-us{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#video {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    align-items: center;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

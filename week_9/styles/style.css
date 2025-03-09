@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(70, 70, 189);
+    padding: 20px;
+
+}
+
+h2 {
+    color: rgb(142, 142, 245);
+    text-align: center;
+    font-size: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    color: gray;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: rgb(21, 21, 173);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav, nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: black 1px solid;
+}
