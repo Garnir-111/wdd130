@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full height of the screen */
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    position: absolute;
+    z-index: -1;
+}
+.h2 {
+    position: absolute;
+    margin-top: -100px;
+}
+
+#username {
+    position: absolute;
+    
+}
+
+#password {
+    position: absolute;
+    margin-top: 100px;
+}
+
+.button {
+    color: white;
+    position: absolute;
+    margin-top: 200px;
+    background-color: #1D3557;
+    width: 100px;
+}
+
