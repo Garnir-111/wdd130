@@ -6,8 +6,8 @@
   --secondary-color: #1D3557;
   --accent1-color: #e1841f;
   --accent2-color: #F1FAEE;
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Funnel Display", sans-serif;
+  --paragraph-font: "Black Ops One", sans-serif;
   --headline-color-on-white: #396E94; 
   --headline-color-on-color: white; 
   --paragraph-color-on-white: #396E94; 
@@ -17,6 +17,79 @@
   --nav-background-color: #D4AC0D;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.carousel {
+  max-width: 1200px; 
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.carousel-inner img {
+  width: 100%;
+  height: 400px; /* Adjust height */
+  object-fit: cover;
+}
+
+/* Caption Styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Caption Text */
+.carousel-caption h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--paragraph-font);
+  color: var(--headline-color-on-color);
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  color: var(--headline-color-on-color);
+  font-family: var(--heading-font);
+}
+
+/* Indicators */
+.carousel-indicators button {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff; /* Bootstrap primary color */
+}
+
+/* Control Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Makes arrows white */
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  grid-template-rows: repeat(2, 1fr);   /* 2 equal rows */
+  gap: 10px;
 }
 
 #search {
@@ -108,4 +181,42 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+.page_one_game_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto); /* 4 rows with automatic height */
+  gap: 20px; /* Optional: spacing between grid items */
+  padding-bottom: 20px;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  grid-template-rows: 1fr;
+  gap: 10px; /* Optional: spacing between grid items */
+  background-color: var(--accent2-color);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: 1.0s ease;
+  transform: scale(1);
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+#pic {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.05);
 }
